@@ -1,0 +1,21 @@
+.collapse__button {
+  width: auto;
+}
+
+.collapse__items {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: all .5s;
+}
+
+.collapse__item {
+  margin: 1rem 0;
+  font-size: var(--default-content-font-size);
+}
+
+input[type="checkbox"]:checked + .collapse__items {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+}
