@@ -1,0 +1,13 @@
+:root {
+  --toggle-width: 50px;
+  --button-width: 100px;
+  --default-padding: 10px;
+  --default-radius: 5px;
+  --default-tab-text-color: white;
+  --background-color: #e2dbbe;
+  --color-primary: #188fa7;
+  --secondary-color: #9dbbae;
+  --light-gray: #e7e7e7;
+  --modal-overlay-color: rgba(0, 0, 0, 0.6);
+  --default-content-font-size: 1.5rem;
+}

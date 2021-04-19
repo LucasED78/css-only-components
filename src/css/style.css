@@ -1,0 +1,101 @@
+@import url(./modal.css);
+@import url(./collapse.css);
+@import url(./toggle.css);
+@import url(./tab.css);
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--background-color);
+  font-family: sans-serif;
+}
+
+main {
+  width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 6rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+h6 {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+}
+
+.header p {
+  text-align: center;
+}
+
+section {
+  margin: 6rem 0;
+}
+
+section h1 {
+  font-size: 4rem;
+  text-align: start;
+}
+
+p {
+  font-size: 2rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+code {
+  font-size: 1rem;
+}
+
+.container {
+  margin: 1rem 0;
+}
+
+.button {
+  display: inline-block;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button__primary {
+  width: var(--button-width);
+  background-color: var(--color-primary);
+  color: white;
+  padding: var(--default-padding) 2rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  border-radius: var(--default-radius);
+  cursor: pointer;
+}
+
+.button__primary--outline {
+  color: var(--color-primary);
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+}
