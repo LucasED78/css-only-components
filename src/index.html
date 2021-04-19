@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Only CSS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/a11y-dark.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+<body>
+  <header class="header" role="banner">
+    <h1>
+      CSS-Only Components
+    </h1>
+
+    <p>
+      This components are built only with pure css, so I hope you like.
+    </p>
+  </header>
+
+  <main>
+    <section id="toggle">
+      <h1>
+        Toggle
+      </h1>
+  
+      <h6>Example</h6>
+  
+      <div class="container">
+        <input type="checkbox" id="toggle-1" aria-hidden="true" />
+        <label class="toggle" for="toggle-1"></label>
+      </div>
+  
+      <h6>code</h6>
+  
+      <pre>
+        <code class="language-html">
+  &lt;input type=&quot;checkbox&quot; id=&quot;toggle&quot; aria-hidden=&quot;true&quot; /&gt;
+  &lt;label class=&quot;toggle&quot; for=&quot;toggle&quot;&gt;&lt;/label&gt; 
+        </code>
+      </pre>
+    </section>
+    
+    <section id="modal">
+      <h1>
+        Modal
+      </h1>
+  
+      <h6>
+        Example
+      </h6>
+  
+      <div class="container">
+        <label class="button button__primary" for="modal-1" role="button">
+          open modal
+        </label>
+    
+        <div class="modal">
+          <input type="checkbox" id="modal-1" aria-hidden="true" />
+          
+          <label class="modal__overlay" aria-hidden="true" for="modal-1">
+            <div class="modal__dialog">
+              <div class="modal__header">
+                <div class="modal__header-content">
+                  <p>
+                    My modal!
+                  </p>
+                  <label class="button button__close" for="modal-1" role="button" aria-hidden="true">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <ellipse style="fill:#E04F5F;" cx="256" cy="256" rx="256" ry="255.832"/>
+                    <g transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 77.26 32)">
+                      <rect x="3.98" y="-427.615" style="fill:#FFFFFF;" width="55.992" height="285.672"/>
+                      <rect x="-110.828" y="-312.815" style="fill:#FFFFFF;" width="285.672" height="55.992"/>
+                    </g>
+                    </svg>
+                  </label>
+                </div>
+              </div>
+              <div class="modal__body">
+                <p>
+                  A very nice content!
+                </p>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+  
+      <h6>
+        Code
+      </h6>
+  
+      <pre>
+        <code class="language-html">
+  &lt;label class=&quot;button button__primary&quot; for=&quot;modal-1&quot; role=&quot;button&quot;&gt;
+    open modal
+  &lt;/label&gt;
+
+  &lt;div class=&quot;modal&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;modal-1&quot; aria-hidden=&quot;true&quot; /&gt;
+    
+    &lt;label class=&quot;modal__overlay&quot; aria-hidden=&quot;true&quot; for=&quot;modal-1&quot;&gt;
+      &lt;div class=&quot;modal__dialog&quot;&gt;
+        &lt;div class=&quot;modal__header&quot;&gt;
+          &lt;div class=&quot;modal__header-content&quot;&gt;
+            &lt;p&gt;
+              My modal!
+            &lt;/p&gt;
+            &lt;label class=&quot;button button__close&quot; for=&quot;modal-1&quot; role=&quot;button&quot; aria-hidden=&quot;true&quot;&gt;
+              &lt;svg version=&quot;1.1&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot;
+                viewBox=&quot;0 0 512 512&quot; style=&quot;enable-background:new 0 0 512 512;&quot; xml:space=&quot;preserve&quot;&gt;
+              &lt;ellipse style=&quot;fill:#E04F5F;&quot; cx=&quot;256&quot; cy=&quot;256&quot; rx=&quot;256&quot; ry=&quot;255.832&quot;/&gt;
+              &lt;g transform=&quot;matrix(-0.7071 0.7071 -0.7071 -0.7071 77.26 32)&quot;&gt;
+                &lt;rect x=&quot;3.98&quot; y=&quot;-427.615&quot; style=&quot;fill:#FFFFFF;&quot; width=&quot;55.992&quot; height=&quot;285.672&quot;/&gt;
+                &lt;rect x=&quot;-110.828&quot; y=&quot;-312.815&quot; style=&quot;fill:#FFFFFF;&quot; width=&quot;285.672&quot; height=&quot;55.992&quot;/&gt;
+              &lt;/g&gt;
+              &lt;/svg&gt;
+            &lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal__body&quot;&gt;
+          &lt;p&gt;
+            A very nice content!
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+        </code>
+      </pre>
+    </section>
+  
+    <section id="collapse">
+      <h1>
+        Collapse
+      </h1>
+  
+      <h6>
+        example
+      </h6>
+  
+      <div class="container">
+        <div class="collapse">
+          <label class="button button__primary collapse__button" for="collapse-1" role="button">
+            Collapse
+          </label>
+    
+          <input type="checkbox" id="collapse-1" aria-hidden="true">
+    
+          <ul class="collapse__items">
+            <li class="collapse__item">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus praesentium libero animi nobis minus amet, accusantium suscipit vel et ipsa quia quo, excepturi aut unde exercitationem quisquam voluptatum corporis officia!
+            </li>
+    
+            <li class="collapse__item">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, maxime magni placeat quos consequatur sapiente odit sit distinctio neque aut dolore dolores accusamus soluta, nesciunt laborum, pariatur labore provident vitae.
+            </li>
+          </ul>
+        </div>
+    
+        <div class="collapse">
+          <label class="button button__primary collapse__button" for="collapse-2" role="button">
+            Collapse
+          </label>
+    
+          <input type="checkbox" id="collapse-2" aria-hidden="true">
+    
+          <ul class="collapse__items" aria-hidden="true">
+            <li class="collapse__item">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus praesentium libero animi nobis minus amet, accusantium suscipit vel et ipsa quia quo, excepturi aut unde exercitationem quisquam voluptatum corporis officia!
+            </li>
+    
+            <li class="collapse__item">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, maxime magni placeat quos consequatur sapiente odit sit distinctio neque aut dolore dolores accusamus soluta, nesciunt laborum, pariatur labore provident vitae.
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+      <h6>
+        code
+      </h6>
+  
+      <pre>
+        <code class="language-html">
+    &lt;div class=&quot;collapse&quot;&gt;
+      &lt;label class=&quot;button button__primary collapse__button&quot; for=&quot;collapse-1&quot; role=&quot;button&quot;&gt;
+        Collapse
+      &lt;/label&gt;
+  
+      &lt;input type=&quot;checkbox&quot; id=&quot;collapse-1&quot; aria-hidden=&quot;true&quot;&gt;
+  
+      &lt;ul class=&quot;collapse__items&quot;&gt;
+        &lt;li class=&quot;collapse__item&quot;&gt;
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus praesentium libero animi nobis minus amet, accusantium suscipit vel et ipsa quia quo, excepturi aut unde exercitationem quisquam voluptatum corporis officia!
+        &lt;/li&gt;
+  
+        &lt;li class=&quot;collapse__item&quot;&gt;
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, maxime magni placeat quos consequatur sapiente odit sit distinctio neque aut dolore dolores accusamus soluta, nesciunt laborum, pariatur labore provident vitae.
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+        </code>
+      </pre>
+    </section>
+  
+    <section id="tabs">
+      <h1>
+        Tab
+      </h1>
+  
+      <h6>
+        Example
+      </h6>
+  
+      <div class="tabs">
+        <div class="tab">
+          <div class="tab__panel">
+            <input type="radio" name="tab__open" id="panel-1" aria-hidden="true" checked>
+  
+            <label class="button button__primary button__primary--outline" for="panel-1">
+              Tab 1
+            </label>  
+            
+            <div class="tab__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero corrupti repellendus eos. Tempora repellat repudiandae accusantium natus, doloremque pariatur sed dolore nisi facere autem fugit iste fuga beatae minima?
+            </div>
+          </div>
+        </div>
+  
+        <div class="tab">
+          <div class="tab__panel">
+            <input type="radio" name="tab__open" id="panel-2" aria-hidden="true">
+  
+            <label class="button button__primary button__primary--outline" for="panel-2">
+              Tab 2
+            </label>
+  
+            <div class="tab__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugit itaque placeat velit quibusdam saepe? Architecto assumenda accusamus quidem tempore distinctio provident repudiandae soluta perferendis reiciendis ipsa ratione, fuga ipsum!
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <h6>
+        Code
+      </h6>
+  
+      <pre>
+        <code class="language-html">
+    &lt;div class=&quot;tabs&quot;&gt;
+      &lt;div class=&quot;tab&quot;&gt;
+        &lt;div class=&quot;tab__panel&quot;&gt;
+          &lt;input type=&quot;radio&quot; name=&quot;tab__open&quot; id=&quot;panel-1&quot; aria-hidden=&quot;true&quot; checked&gt;
+  
+          &lt;label class=&quot;button button__primary button__primary--outline&quot; for=&quot;panel-1&quot;&gt;
+            Tab 1
+          &lt;/label&gt;  
+          
+          &lt;div class=&quot;tab__content&quot;&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero corrupti repellendus eos. Tempora repellat repudiandae accusantium natus, doloremque pariatur sed dolore nisi facere autem fugit iste fuga beatae minima?
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+  
+      &lt;div class=&quot;tab&quot;&gt;
+        &lt;div class=&quot;tab__panel&quot;&gt;
+          &lt;input type=&quot;radio&quot; name=&quot;tab__open&quot; id=&quot;panel-2&quot; aria-hidden=&quot;true&quot;&gt;
+  
+          &lt;label class=&quot;button button__primary button__primary--outline&quot; for=&quot;panel-2&quot;&gt;
+            Tab 2
+          &lt;/label&gt;
+  
+          &lt;div class=&quot;tab__content&quot;&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugit itaque placeat velit quibusdam saepe? Architecto assumenda accusamus quidem tempore distinctio provident repudiandae soluta perferendis reiciendis ipsa ratione, fuga ipsum!
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+        </code>
+      </pre>
+    </section>
+  </main>
+</body>
+</html>
