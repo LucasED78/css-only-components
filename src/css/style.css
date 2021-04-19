@@ -12,10 +12,8 @@ html {
 }
 
 body {
-  width: 1200px;
-  margin: auto;
   background: var(--background-color);
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 footer {
@@ -82,11 +80,19 @@ code {
   font-size: 1.2rem;
 }
 
+
+.container__main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .container {
   margin: 1rem 0;
 }
 
 .button {
+  width: auto;
   display: inline-block;
   border: 0;
   outline: none;
@@ -99,7 +105,6 @@ code {
 }
 
 .button__primary {
-  width: var(--button-width);
   background-color: var(--color-primary);
   color: white;
 }
@@ -111,7 +116,6 @@ code {
 }
 
 .button__light {
-  width: var(--button-width);
   background-color: var(--color-light);
   color: var(--color-dark);
 }
@@ -148,4 +152,10 @@ code {
 
 .button__footer:hover path {
   fill: var(--color-dark);
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 4rem;
+  }
 }
