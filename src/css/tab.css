@@ -1,0 +1,32 @@
+.tabs {
+  display: flex;
+  position: relative;
+}
+
+.tab:not(:last-of-type) {
+  margin-right: .5rem;
+}
+
+.tab__panel {
+  min-height: 7rem;
+}
+
+.tab__content {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  font-size: var(--default-content-font-size);
+  margin-top: 1rem;
+  visibility: hidden;
+  transition: opacity .3s, visibility .3s;
+}
+
+input[type="radio"]:checked + .button + .tab__content {
+  opacity: 1;
+  visibility: visible;
+}
+
+input[type="radio"]:checked + .button__primary {
+  color: var(--default-tab-text-color);
+  background-color: #0088a3;
+}
