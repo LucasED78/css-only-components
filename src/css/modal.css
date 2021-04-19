@@ -1,0 +1,81 @@
+@import url(./_variables.css);
+
+.button__close {
+  width: 2rem;
+  height: 2rem;
+}
+
+.button__close > svg {
+  width: inherit;
+}
+
+.modal__overlay {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: var(--modal-overlay-color);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .5s;
+}
+
+.modal__dialog {
+  width: 60rem;
+  height: 40rem;
+  position: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border-radius: var(--default-radius);
+  padding: var(--default-padding);
+  opacity: 0;
+  visibility: hidden;
+  background: white;
+  transition: opacity .5s, visibility .5s, top .5s;
+}
+
+.modal__header {
+  display: block;
+}
+
+.modal__header::after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  display: flex;
+  background-color: var(--light-gray);
+  margin: .6rem 0;
+}
+
+.modal__header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal__header-content p { margin: 1.2rem 0; }
+
+.modal__body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="checkbox"]:checked + .modal__overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+input[type="checkbox"]:checked + .modal__overlay > .modal__dialog {
+  top: 6rem;
+  opacity: 1;
+  visibility: visible;
+}
