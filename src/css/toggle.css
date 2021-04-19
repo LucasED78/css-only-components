@@ -1,0 +1,27 @@
+@import url(./_variables.css);
+
+.toggle {
+  width: var(--toggle-width);
+  height: 20px;
+  border: 1px solid #9dbbae;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+}
+
+.toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--toggle-width) / 2);
+  height: inherit;
+  background-color: var(--secondary-color);
+  border-radius: inherit;
+  transition: all 0.5s;
+}
+
+input[type="checkbox"]:checked + .toggle::before {
+  left: 50%;
+}
